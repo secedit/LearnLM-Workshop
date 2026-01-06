@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic_001",
+    "question": "Assume the following axioms in an OWL ontology: \n1. Class 'Plant' is disjoint with Class 'Animal'.\n2. Class 'CarnivorousPlant' is a subclass of 'Plant'.\n3. Individual 'VenusFlytrap' is an instance of 'CarnivorousPlant'.\n\nQuestion: If we assert that 'VenusFlytrap' is also an instance of 'Animal', does the ontology become inconsistent? Explain the reasoning chain step-by-step.",
+    "expected_keyword": "inconsistent",
+    "complexity": "High"
+  },
+  {
+    "id": "logic_002",
+    "question": "Consider the property 'hasAncestor' which is defined as a Transitive Property. We have facts: 'Alice hasAncestor Bob' and 'Bob hasAncestor Charlie'. \n\nDoes the ontology automatically infer that 'Charlie hasAncestor Alice'? If not, what property characteristic is missing?",
+    "expected_keyword": "symmetric",
+    "complexity": "Medium"
+  },
+  {
+    "id": "logic_003",
+    "question": "In the context of the Open World Assumption (OWA), if an ontology contains a class 'Bird' and we know 'Tweety' is a 'Bird', but we do NOT have an axiom stating 'Tweety canFly', can we conclude that Tweety cannot fly? Explain why or why not.",
+    "expected_keyword": "cannot conclude",
+    "complexity": "Medium"
+  },
+  {
+    "id": "logic_004",
+    "question": "We have an ObjectProperty 'isMarriedTo' defined as Functional. The ontology contains: \n1. 'John isMarriedTo Mary' \n2. 'John isMarriedTo Susan' \n\nWhat will an OWL Reasoner infer about the individuals 'Mary' and 'Susan'?",
+    "expected_keyword": "same individual",
+    "complexity": "High"
+  }
+]
