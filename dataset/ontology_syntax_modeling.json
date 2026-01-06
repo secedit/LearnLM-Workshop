@@ -1,0 +1,26 @@
+[
+  {
+    "id": "syntax_001",
+    "question": "Generate a valid Turtle (TTL) snippet that defines a class 'Professor' as a subclass of 'Person'. Then, define an ObjectProperty 'teaches' with domain 'Professor' and range 'Course'. Ensure all prefixes (rdf, rdfs, owl, ex) are correctly defined at the top.",
+    "expected_keyword": "rdfs:subClassOf",
+    "complexity": "Medium"
+  },
+  {
+    "id": "syntax_002",
+    "question": "Review the following Turtle code for errors:\n\n:MyCar a owl:Class ;\n    :hasColor \"Red\" .\n\nIdentify the modeling error regarding the usage of ':MyCar' and ':hasColor'. Is ':MyCar' treated as a Class or an Individual here? Why is this a 'punning' or syntax issue?",
+    "expected_keyword": "metamodeling",
+    "complexity": "High"
+  },
+  {
+    "id": "syntax_003",
+    "question": "Convert the following natural language requirement into an OWL Restriction using Manchester Syntax:\n'A Pizza must have at least two toppings to be considered a GourmetPizza.'",
+    "expected_keyword": "min 2",
+    "complexity": "Medium"
+  },
+  {
+    "id": "syntax_004",
+    "question": "Explain the difference between 'owl:someValuesFrom' (Existential Quantification) and 'owl:allValuesFrom' (Universal Quantification) using a 'VegetarianPizza' definition example. Which one allows a pizza to have NO toppings at all?",
+    "expected_keyword": "allValuesFrom",
+    "complexity": "High"
+  }
+]
